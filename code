@@ -11,7 +11,7 @@ void setup() {
 }
 
 // This is what makes the lights change rapidly in a column 
-// Thee switch resets the game and when the button is pressed, it stays on the light.
+// The switch resets the game and when the button is pressed, it stays on the light.
 void loop() {
   int start = digitalRead(2);
   int end, light, win, loss;
