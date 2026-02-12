@@ -10,7 +10,8 @@ void setup() {
   Serial.begin(9600);
 }
 
-// This is what makes the lights change rapidly in a column
+// This is what makes the lights change rapidly in a column 
+// Thee switch resets the game and when the button is pressed, it stays on the light.
 void loop() {
   int start = digitalRead(2);
   int end, light, win, loss;
@@ -73,7 +74,7 @@ void loop() {
   }
   }
 
- // This tells the user if they won or lost.
+ // This tells the user if they won or lost depending on what they landed on.
   if (light == 11) 
   {
       win++;
