@@ -1,3 +1,4 @@
+// Game by Dylan Guzman and Alexander Dowling
 // This declares which pins are being used, and which pin are the inputs and outputs.
 void setup() {
   pinMode(13, OUTPUT);
