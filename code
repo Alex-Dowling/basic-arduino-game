@@ -1,6 +1,5 @@
-
+// This declares which pins are being used, and which pin are the inputs and outputs.
 void setup() {
-// initialize digital pin LED_BUILTIN as an output.
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode(11, OUTPUT);
@@ -11,7 +10,7 @@ void setup() {
   Serial.begin(9600);
 }
 
-
+// This is what makes the lights change rapidly in a column
 void loop() {
   int start = digitalRead(2);
   int end, light, win, loss;
@@ -73,7 +72,8 @@ void loop() {
       delay(100);
   }
   }
- 
+
+ // This tells the user if they won or lost.
   if (light == 11) 
   {
       win++;
